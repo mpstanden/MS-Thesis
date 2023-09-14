@@ -18,9 +18,9 @@ seasons <- c("North Slope Summer","North Slope Winter","Pine Valley Summer","Pin
 Effects <- c("Spatial", "Temporal", "NDVI")
 
 ## Set working directory
-wd <- getwd()
 
-data <- readRDS("~wd/Homerange.RDS")
+
+data <- readRDS("Homerange.RDS")
 
 ## Separating out data for model
 data.s <- data[,c("spat_resid","spat_bin","spatial.C","temp_resid","temp_bin","temporal.C","logarea","logdist","x_NDVI","NDVI_bin","SD_NDVI","step.NDVI_x","step.NDVI_SD","animal","year","Sex","CaptureUnit","Season","sePL_col","sePL", "c.prop", "n.prop", "d.prop","year","contingency")]
