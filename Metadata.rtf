@@ -1,0 +1,31 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Season: binary (1,2), summer = 1, winter = 2\
+CaptureUnit: binary (1,2), North Slope = 1, Pine Valley = 2\
+sePL: categorical (4) combination of season and capture unit\
+CU_col: binary hex for plotting\
+sePL_col: categorical hex for plotting\
+year: year or combination of years (for winter home ranges)\
+animal: unique animal ID\
+uniq: combination of year and animal ID, represents unique seasonal HR\
+Obs: number of locations used to generate seasonal 95% kernel UD HR       \
+Juniq: number of Julian days within a given season that the animal had location data for\
+dist: total distance (m) moved by an animal during a given season\
+day_dist: average distance moved by an animal per day in a given season ( dist / Juniq)\
+logdist: log(daydist)\
+area: total area (ha) of HR\
+logarea: log(area)\
+temporal.C: temporal constancy of forage (NDVI) in the seasonal HR\
+temp_resid: residual value for temporal constancy generated from third degree polynomial regression with HR area\
+spatial.C: spatial constancy of forage (NDVI) in the seasonal HR\
+spat_resid: residual value for spatial constancy generated from third degree polynomial regression with HR area\
+x_NDVI: mean NDVI value in the seasonal HR\
+area_scale: scaled logarea\
+NDVI_scale: scaled x_NDVI\
+spat_scale: scaled spat_resid\
+temp_scale: scaled temp_resid}
